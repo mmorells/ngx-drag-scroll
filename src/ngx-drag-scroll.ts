@@ -248,7 +248,6 @@ export class DragScrollComponent implements OnDestroy, AfterViewInit, OnChanges,
     });
     this.checkNavStatus();
     this.dsInitialized.emit();
-    this.adjustMarginToLastChild();
   }
 
   ngAfterViewChecked() {
