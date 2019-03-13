@@ -715,10 +715,10 @@ export class DragScrollComponent implements OnDestroy, AfterViewInit, OnChanges,
     }
   }
 
-  @HostListener('window:resize')
+  /*@HostListener('window:resize')
   private onWindowResize() {
     this.refreshWrapperDimensions();
-  }
+  }*/
 
   /**
    * adds a margin right style to the last child element which will resolve the issue
