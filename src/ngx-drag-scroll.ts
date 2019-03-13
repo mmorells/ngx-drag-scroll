@@ -535,7 +535,7 @@ export class DragScrollComponent implements OnDestroy, AfterViewInit, OnChanges,
   private refreshWrapperDimensions() {
     if (this.wrapper) {
       this._renderer.setStyle(this.wrapper, 'width', '100%');
-      this._renderer.setStyle(this.wrapper, 'height', this._elementRef.nativeElement.style.height
+      this._renderer.setStyle(this.wrapper, 'height', '100%'
         || this._elementRef.nativeElement.offsetHeight + 'px');
     }
   }
