@@ -724,7 +724,7 @@ export class DragScrollComponent implements OnDestroy, AfterViewInit, OnChanges,
    * adds a margin right style to the last child element which will resolve the issue
    * of last item gets cutoff.
    */
-  private adjustMarginToLastChild(): void {
+  /* private adjustMarginToLastChild(): void {
     if (this._children && this.hideScrollbar) {
       const lastItem = this._children['_results'][this._children['_results'].length - 1]._elementRef.nativeElement;
       if (this.wrapper && this._children['_results'].length > 1) {
@@ -733,5 +733,5 @@ export class DragScrollComponent implements OnDestroy, AfterViewInit, OnChanges,
         this._renderer.setStyle(lastItem, 'margin-right', 0);
       }
     }
-  }
+  } */
 }
