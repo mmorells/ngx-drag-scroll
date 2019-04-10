@@ -454,7 +454,7 @@ export class DragScrollComponent implements OnDestroy, AfterViewInit, OnChanges,
       // Append content element to container element.
       this._renderer.appendChild(this.wrapper, this._contentRef.nativeElement);
 
-      this.adjustMarginToLastChild();
+      //this.adjustMarginToLastChild();
     }
   }
 
@@ -468,7 +468,7 @@ export class DragScrollComponent implements OnDestroy, AfterViewInit, OnChanges,
       }
       this.wrapper = null;
 
-      this.adjustMarginToLastChild();
+      //this.adjustMarginToLastChild();
     }
   }
 
