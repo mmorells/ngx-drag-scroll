@@ -434,8 +434,6 @@ export class DragScrollComponent implements OnDestroy, AfterViewInit, OnChanges,
 
   private hideScrollbar(): void {
     if (this._contentRef.nativeElement.style.display !== 'none' && !this.wrapper) {
-      console.log("should recalc");
-      console.log(this.scrollbarWidth);
       this.parentNode = this._contentRef.nativeElement.parentNode;
 
       // create container element
@@ -488,10 +486,10 @@ export class DragScrollComponent implements OnDestroy, AfterViewInit, OnChanges,
   }
 
   private setScrollBar(): void {
-    console.log(this.scrollbarHidden);
     if (this.scrollbarHidden) {
       this.hideScrollbar();
     } else {
+      console.log(this.scrollbarHidden);
       this.showScrollbar();
     }
   }
