@@ -434,6 +434,7 @@ export class DragScrollComponent implements OnDestroy, AfterViewInit, OnChanges,
 
   private hideScrollbar(): void {
     if (this._contentRef.nativeElement.style.display !== 'none' && !this.wrapper) {
+      console.log("should recalc");
       this.parentNode = this._contentRef.nativeElement.parentNode;
 
       // create container element
